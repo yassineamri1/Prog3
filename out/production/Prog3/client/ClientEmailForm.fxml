@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="client.ClientEmailFormController">
+  <children>
+    <HTMLEditor fx:id="htmlEditor" layoutX="0.0" layoutY="80.0" prefHeight="279.0000999999975" prefWidth="600.0" />
+    <TextField fx:id="receivers" layoutX="0.0" layoutY="0.0" prefHeight="40.0" prefWidth="600.0" promptText="To" text="" />
+    <TextField fx:id="subject" layoutX="0.0" layoutY="40.0" prefHeight="40.0" prefWidth="600.0" promptText="Subject" />
+    <ToolBar layoutX="0.0" prefHeight="40.0001220703125" prefWidth="600.0" AnchorPane.bottomAnchor="0.0">
+      <items>
+        <Button fx:id="btnSend" contentDisplay="LEFT" mnemonicParsing="false" prefWidth="81.0" text="Send" />
+      </items>
+    </ToolBar>
+  </children>
+</AnchorPane>

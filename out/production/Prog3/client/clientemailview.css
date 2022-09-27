@@ -1,0 +1,6 @@
+.list-view .list-cell:selected {
+    -fx-text-fill: black;
+    -fx-background-color: transparent;
+    -fx-effect: null;
+}
+

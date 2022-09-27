@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="server.ServerEmailController">
+  <children>
+    <TabPane layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab fx:id="tabLog" text="Log">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="320.0" prefWidth="600.0">
+              <children>
+                <ListView fx:id="lsvLog" layoutX="0.0" layoutY="0.0" prefHeight="359.0" prefWidth="600.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="tabUsers" text="Users list">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <ListView fx:id="lsvUsers" layoutX="0.0" layoutY="0.0" prefHeight="359.0" prefWidth="600.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="tabEmails" text="Emails list">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <ListView fx:id="lsvEmails" layoutX="0.0" layoutY="0.0" prefHeight="359.0" prefWidth="600.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+    <ToolBar fx:id="tbarLog" layoutX="0.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0">
+      <items>
+        <Button fx:id="btnDeleteLog" mnemonicParsing="false" text="Delete" />
+      </items>
+    </ToolBar>
+    <ToolBar fx:id="tbarUsers" layoutX="0.0" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0">
+      <items>
+        <Button fx:id="btnAddUser" mnemonicParsing="false" text="Add" />
+        <Button fx:id="btnRemoveUser" mnemonicParsing="false" text="Remove" />
+      </items>
+    </ToolBar>
+  </children>
+</AnchorPane>
